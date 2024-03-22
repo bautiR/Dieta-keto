@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+p {
+    width: 500px;
+    margin: 20px auto;
+    padding: 1em;
+    background: lime;
+}
+
+form {
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    background-color: beige;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    margin: .5em 0;
+}
+
+.control label {
+    flex: 1 80px;
+}
+
+.control textarea{
+    height: 300px;
+}
+
+.control input,
+.control textarea,
+.control select,
+.control > div {
+    flex: 3 300px;
+    padding: .3em;
+}
+
+.control > div {
+    background: white;
+    border: 1px solid #aaa;
+}
+
+.control div div {
+    margin: .3em 0;
+}
+
+form > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em 0 0 0;
+}
+
+input[type="submit"] {
+    padding: .6em 1.3em;
+    background-color: blue;
+    color: white;
+    border: 1px solid #aaa;
+}
+
+input[type="reset"] {
+    padding: .6em 1em;
+    background-color: white;
+    border: 1px solid #aaa;
+    margin-right: .3em;
+}

@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #04311e;
+}
+
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(201 244 176 / 99%);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+h1{
+    color: #045531;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+
+
+
+.blanco{
+    color: #fff;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin: 1rem;
+    text-transform: uppercase;
+    color: #045531;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h3{
+    font-size: 1.9rem;
+    margin: 0.6rem;
+    color: #045531;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,h2, h3{
+    text-align: center;
+}
+
+
+section{
+    margin: 1rem;
+}
+
+p{
+    font-size: 1rem;
+    margin: 0.6rem;
+}
+
+.contenedor_exp{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor_exp > div{
+    width: 38%;
+}
+
+.ifr{
+    text-align: center;
+}
+
+
+iframe {
+    width: 100%;
+    border: 2px solid rgb(6, 58, 36);
+    aspect-ratio: 16/9;
+}
+
+
+.contenedor_ben{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: #5fb87f;
+}
+
+.subti{
+    margin: bottom 0 ;
+    margin-top: 1rem;
+}
+.parrafo{
+    display: inline-block;
+    
+}
+
+
+
+form{
+    width: 50%;
+    padding: 30px;
+    background-color: rgb(98 94 94 / 32%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #666;
+    margin: 20px auto;
+}    
+
+
+input, label {
+    display: block;
+    margin-bottom: 0.6rem;  
+    width: 100%; 
+    text-align: center;
+}
+
+input {
+    padding: 5px;
+    color: rgb(0, 32, 32);
+}
+
+textarea{
+    width: 100%;
+    min-height: 200px;    
+    font-size: 0.6rem;
+    padding: 10px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.enviar{
+    background-color: rgb(201 244 176 / 99%);
+    border: 1px solid #04311e;
+    border-radius: 2px;
+    color: #04311e;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+footer{
+    display: flex;
+    justify-content:space-evenly;
+}
+footer li{
+    display: block;
+}
+
+footer p{
+    display: inline-block;
+    font-size: 2.2rem;
+}
+
+footer p a{
+    color: #04311e;
+}
+
+@media screen and (max-width: 600){
+
+    h2, h3{
+        margin-top: 10px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .parrafo>img{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    h1{
+        display: none;
+    }
+
+    .subti{
+        margin: 1rem, 0;
+        font-size: 1.4rem;
+    }
+
+    .contenedor_exp{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contenedor_exp > div{
+        width: 100%;
+    }
+
+    .contenedor_ben{
+      
+        display: flex;
+        flex-direction: column;
+        
+     }
+
+    .parrafo {
+        margin: 1rem;
+    }
+    
+    .parrafo > img{
+        justify-content: center;
+    }
+
+    img{
+        margin-bottom: 1rem;
+    }
+
+    form{
+        width: 90%;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-car{
+        height: 200px;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 992px){
+
+
+    .contenedor_ben{
+      
+        margin: 1rem;
+        
+     }
+     .parrafo{
+         width: 45%;
+         margin: 10px 10px 10px 30px auto;
+     }
+
+    form{
+        width: 50%;
+        padding: 30px;
+        background-color: rgb(98 94 94 / 32%);
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px #666;
+        margin: 20px auto;
+    }    
+
+    .img-car{
+        height: 400px;
+    }
+      
+   }
